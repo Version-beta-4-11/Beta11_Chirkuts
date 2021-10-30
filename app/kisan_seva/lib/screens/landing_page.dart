@@ -97,7 +97,7 @@ class _LandingState extends State<Landing> {
                                                       AuthPage()));
                         },
                         textColor: Colors.white,
-                        padding: EdgeInsets.all(30),
+                        padding: EdgeInsets.all(20),
                         color: Color(0xFF79C44F),
                         child: Text("EXPERT LOGIN",
                           textAlign: TextAlign.center,
@@ -122,7 +122,7 @@ class _LandingState extends State<Landing> {
                                                       AuthPage()));
                         },
                         textColor: Colors.white,
-                        padding: EdgeInsets.all(20),
+                        padding: EdgeInsets.all(15),
                         color: Color(0xFF79C44F),
                         child: Text("CONTINUE AS FARMER",
                           textAlign: TextAlign.center,
