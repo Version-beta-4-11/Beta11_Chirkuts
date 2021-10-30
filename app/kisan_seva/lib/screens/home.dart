@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'weather.dart';
 import 'login.dart';
+import 'landing_page.dart';
 
 class Home extends StatefulWidget {
   static final String routeName = 'home';
@@ -26,7 +27,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         title: Text("KISAN SEVA", style: TextStyle(color: Colors.white),),
         backgroundColor: Color(0xFF79C44F),
       ),
-      body: AuthPage(),
+      body: Landing(),
     );
   }
 }

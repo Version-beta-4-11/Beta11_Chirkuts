@@ -19,6 +19,7 @@ class registerp {
 
 class _RegisterPageState extends State<RegisterPage> {
   final formkey = new GlobalKey<FormState>();
+  late String _state='Andhra Pradesh';
   late String _email;
   late String _password;
   late String _name;
@@ -77,7 +78,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           'email': _email,
                           'password' : _password,
                           'phoneno': _phoneno,
-                          'city': _city,
+                          'state': _state,
                       });
                       // if(_selectedr=='Donor'){
                       // fsconnect.collection("Donors").add({
@@ -129,7 +130,7 @@ class _RegisterPageState extends State<RegisterPage> {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         title: Text(
-          "Register",
+          "",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 50.0,
@@ -144,6 +145,7 @@ class _RegisterPageState extends State<RegisterPage> {
             topLeft: const Radius.circular(40.0),
             topRight: const Radius.circular(40.0)),
         child: Container(
+          padding: EdgeInsets.all(30),
           height: 700.0,
           width: double.infinity,
           color: Colors.white,
@@ -156,7 +158,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   child: Column(
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.all(5),
                         child: TextField(
                           decoration: InputDecoration(
                             hintText: 'Name',
@@ -224,7 +226,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                       ),
                        Padding(
-                        padding: const EdgeInsets.all(18.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: TextField(
                           decoration: InputDecoration(
                             hintText: 'Phone Number',
@@ -240,7 +242,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(18.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: TextField(
                           decoration: InputDecoration(
                             hintText: 'Password',
@@ -255,22 +257,51 @@ class _RegisterPageState extends State<RegisterPage> {
                           },
                         ),
                       ),
-                      Padding(
-                              padding: const EdgeInsets.all(18.0),
-                              child: TextField(
-                                decoration: InputDecoration(
-                                  hintText: 'City',
-                                  icon: Icon(
-                                    Icons.location_city,
-                                    color: Color(0xFF79C44F),
-                                  ),
-                                ),
-                                onChanged: (value) {
-                                  _city = value;
-                                  registerp.c=value;
-                                },
-                              ),
-                            ),
+                      Row(
+                  children: [
+                    Text("Select State        "),
+                    DropdownButton<String>(
+      value: _state,
+      icon: const Icon(Icons.arrow_drop_down_circle_outlined),
+      iconSize: 24,
+      elevation: 16,
+      style: Theme.of(context).textTheme.bodyText1,
+      underline: Container(
+        height: 2,
+        color:  Color(0xFF79C44F),
+      ),
+      onChanged: (String? newValue) {
+        setState(() {
+          _state = newValue!;
+        });
+      },
+      items: <String>['Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh','Goa','Gujrat','Haryana','	Himachal Pradesh','Jharkhand','Karnataka','Kerala','Madhya Pradesh','Maharashtra',
+      'Manipur','Meghalaya','Mizoram']
+          .map<DropdownMenuItem<String>>((String value) {
+        return DropdownMenuItem<String>(
+          value: value,
+          child: Text(value),
+        );
+      }).toList(),
+    ),
+                  ],
+                ),
+                      // Padding(
+                      //         padding: const EdgeInsets.all(18.0),
+                      //         child: TextField(
+                      //           decoration: InputDecoration(
+                      //             hintText: 'City',
+                      //             icon: Icon(
+                      //               Icons.location_city,
+                      //               color: Color(0xFF79C44F),
+                      //             ),
+                      //           ),
+                      //           onChanged: (value) {
+                      //             _city = value;
+                      //             registerp.c=value;
+                      //           },
+                      //         ),
+                      //       ),
                       // Container(
                       //   child: Column(
                       //     children: <Widget>[
@@ -315,12 +346,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       RaisedButton(
                         onPressed: () => validate_submit(context),
                         textColor: Colors.white,
-                        padding: EdgeInsets.only(left: 5.0, right: 5.0),
+                        padding: EdgeInsets.all(30),
                         color: Color(0xFF79C44F),
                         child: Text("REGISTER",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontFamily: 'GlacialIndifference',
+                              fontSize: 30
                           ),
                         ),
 
