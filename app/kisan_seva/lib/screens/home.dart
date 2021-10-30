@@ -20,7 +20,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(actions: [],title: Text("kisan sewa"),),
+      appBar: AppBar(actions: [],title: Text("kisan sewa"),backgroundColor: Color(0xFF50fa78),),
     );
   }
 }
