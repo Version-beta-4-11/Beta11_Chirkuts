@@ -1,0 +1,14 @@
+* {
+  color: rgb(78, 76, 76);
+}
+
+#cityInput,
+#cityName,
+#inputContainer,
+button {
+  margin: 3px;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
