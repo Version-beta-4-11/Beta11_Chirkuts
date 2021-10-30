@@ -39,6 +39,7 @@ dependencies:
   http: ^0.12.1
   geolocator: ^5.3.1
   intl: ^0.16.1
+  flutter_translate: ^3.0.1
 
 dev_dependencies:
   flutter_test:
