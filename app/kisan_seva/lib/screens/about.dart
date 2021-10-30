@@ -12,17 +12,10 @@ class AboutPage extends StatelessWidget {
           "ABOUT",
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: 50.0,
+            fontSize: 36.0,
             fontFamily: 'GlacialIndifference',
             color: Colors.green[50],
           ),
-        ),
-         leading: IconButton(
-          icon: Icon(
-            Icons.reply,
-            color: Colors.white,
-          ),
-          onPressed: () => Navigator.of(context).pop(),
         ),
       ),
       body: Container(

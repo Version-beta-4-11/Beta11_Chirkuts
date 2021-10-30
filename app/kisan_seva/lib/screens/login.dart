@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
 import 'register.dart';
-import 'weather.dart';
+import 'landing_page_final.dart';
 //import 'home.dart';
 
 class AuthPage extends StatefulWidget {
@@ -36,10 +36,10 @@ class _AuthPageState extends State<AuthPage> {
 
                         if (userSignin != null) {
                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      WeatherApp()));
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    MainScreen()));
                           setState(() {
                             sspin = false;
                           });

@@ -41,6 +41,9 @@ dependencies:
   firebase_auth: ^0.18.0+1
   font_awesome_flutter: ^8.5.0
   flutter_spinkit: ^3.1.0
+  flutter_tts: ^3.2.1
+  translator: ^0.1.5
+  webview_flutter: ^0.1.1
 
 dev_dependencies:
   flutter_test:

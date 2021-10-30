@@ -30,8 +30,10 @@ class _ExpertPageState extends State<ExpertPage> {
           if(d.docs[i].data()!=null)
           {
              var don={
+               
               'name': d.docs[i].data()['name'],
               'phoneno': d.docs[i].data()['phoneno'],
+              'state' : d.docs[i].data()['state'],
             };
               experts.add(don);
           }
@@ -51,12 +53,12 @@ class _ExpertPageState extends State<ExpertPage> {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         title: Text(
-          "",
+          "Expert's Phone Number",
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: 50.0,
+            fontSize: 20.0,
             fontFamily: "GlacialIndifference",
-            color: Colors.white,
+            color: Color(0xFF79C44F),
           ),
         ),
          leading: IconButton(
@@ -87,6 +89,7 @@ class _ExpertPageState extends State<ExpertPage> {
 
                       Text(experts[index]["name"],style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
                       Text(experts[index]["phoneno"],style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                      Text(experts[index]["state"],style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                       //Text(volunteers[index]["phoneno"]),
                     ],
                   ),

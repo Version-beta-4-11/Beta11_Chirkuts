@@ -103,7 +103,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       print(_password);
                       print(user);
 
-                      if (user.additionalUserInfo.isNewUser == true) {
+                      if (user.additionalUserInfo!.isNewUser == true) {
                         Navigator.push(
                                               context,
                                               MaterialPageRoute(

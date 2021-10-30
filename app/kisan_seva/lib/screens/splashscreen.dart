@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:kisan_seva/screens/home.dart';
+import 'package:kisan_seva/screens/landing_page.dart';
 import 'package:kisan_seva/style/color.dart';
 
 class Splash extends StatefulWidget {
@@ -21,7 +22,7 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin {
 
   void navigationPage() {
     Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => Home()));
+        .push(MaterialPageRoute(builder: (context) => Landing()));
   }
 
   @override
@@ -55,7 +56,7 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin {
             children: <Widget>[
               Padding(
                   padding: EdgeInsets.only(bottom: 60.0),
-                  child: Text("KISAN SEVA",
+                  child: Text("",
                   style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30.0,
@@ -65,14 +66,14 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin {
           ),
           new Column(
             mainAxisAlignment: MainAxisAlignment.center,
-           /* children: <Widget>[
+            children: <Widget>[
               new Image.asset(
-                'assets/logo.png',
+                'images/KISAN SEVA.png',
                 width: animation.value * 250,
                 height: animation.value * 250,
               ),
 
-            ],*/
+            ],
           ),
         ],
       ),

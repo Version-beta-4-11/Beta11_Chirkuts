@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
+import 'package:kisan_seva/screens/landing_page_final.dart';
 import 'register.dart';
 import 'weather.dart';
 import 'login.dart';
@@ -119,7 +120,7 @@ class _LandingState extends State<Landing> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      AuthPage()));
+                                                      MainScreen()));
                         },
                         textColor: Colors.white,
                         padding: EdgeInsets.all(15),
