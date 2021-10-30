@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:kisan_seva/screens/splashscreen.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,12 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('KISAN SEVA'),
-        ),
-        body: const Text('hi'),
-      ),
+      home: Splash(),
     );
   }
 }
