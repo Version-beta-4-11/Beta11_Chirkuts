@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
     return _child;*/
 
     return MaterialApp(
+      color: Color(0xFF79C44F),
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             floatingActionButton: FloatingActionButton(
@@ -34,8 +35,8 @@ class _HomePageState extends State<HomePage> {
                 );
               },
               child: Icon(
-                Icons.help,
-                color: Color(0xFFFFDAE0),
+                Icons.question_answer,
+                color: Colors.white,
                 size: 29,
               ),
               backgroundColor: Color(0xFF79C44F),
@@ -66,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                       color: Color(0xFF79C44F),
                     ),
                     accountName: Text(
-                      "Kisan Sewa",
+                      "Kisan Seva",
                       style: TextStyle(
                         fontSize: 22.0,
                       ),

@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      color: Color(0xFF79C44F),
       debugShowCheckedModeBanner: false,
       home: Splash(),
     );

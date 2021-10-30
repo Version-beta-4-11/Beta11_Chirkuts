@@ -19,7 +19,7 @@ class AboutPage extends StatelessWidget {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.all(15),
+        padding: EdgeInsets.all(30),
         decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: <Color>[
@@ -40,11 +40,11 @@ class AboutPage extends StatelessWidget {
               ),
         margin: EdgeInsets.all(25),
         //color: Color(0xFFFFDAE0),
-        child: Text("S.H.E. allows the privileged group of people to come together to help out the women who do not have the luxury or rather the necessity of a sanitary menstrual cycle. Through S.H.E. donors or volunteers can come forward and bring about a change in the lives of the much affected rural women and help them out by donating sanitary pads, tampons or menstrual cups so that they too can live a healthy and happy life.",
+        child: Text("KISAN SEVA helps farmers to get early weather warnings , advice on what and when to grow crops by agricultural experts and also get filtered information on crop rates and various crops that can be grown on a particular soil in a particular weather.",
           style: TextStyle(
             fontSize: 27,
             fontFamily: 'GlacialIndifference',
-            color: Color(0xFF79C44F)
+            color: Colors.black
           ),
           textAlign: TextAlign.center,
         ),

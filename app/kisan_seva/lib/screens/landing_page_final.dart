@@ -23,7 +23,7 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-
+  
     return WillPopScope(
       onWillPop: () async {
         final isFirstRouteInCurrentTab =
@@ -36,6 +36,7 @@ class _MainScreenState extends State<MainScreen> {
         return isFirstRouteInCurrentTab;
       },
       child: Scaffold(
+        
         backgroundColor: Colors.white,
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,

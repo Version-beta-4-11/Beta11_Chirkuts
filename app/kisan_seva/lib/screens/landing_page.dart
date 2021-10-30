@@ -81,6 +81,9 @@ class _LandingState extends State<Landing> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
+                      SizedBox(
+                                height: 20.0,
+                              ),
                       Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: new Form(
@@ -104,13 +107,16 @@ class _LandingState extends State<Landing> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontFamily: 'GlacialIndifference',
-                              fontSize: 30
+                              fontSize: 20
                           ),
                         ),
 
                         shape: new RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(30.0)),
                       ),
+                              ),
+                              SizedBox(
+                                height: 30.0,
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(18.0),
@@ -123,13 +129,13 @@ class _LandingState extends State<Landing> {
                                                       MainScreen()));
                         },
                         textColor: Colors.white,
-                        padding: EdgeInsets.all(15),
+                        padding: EdgeInsets.all(20),
                         color: Color(0xFF79C44F),
                         child: Text("CONTINUE AS FARMER",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontFamily: 'GlacialIndifference',
-                              fontSize: 30
+                              fontSize: 20
                           ),
                         ),
 
@@ -138,7 +144,7 @@ class _LandingState extends State<Landing> {
                       ),
                               ),
                               SizedBox(
-                                height: 30.0,
+                                height: 20.0,
                               ),
                               // RaisedButton(
                               //   onPressed: validate_submit,

@@ -130,10 +130,10 @@ class _RegisterPageState extends State<RegisterPage> {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         title: Text(
-          "",
+          "Register as an Expert",
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: 50.0,
+            fontSize: 20.0,
             fontFamily: 'GlacialIndifference',
             color: Colors.white,
             fontWeight: FontWeight.bold
@@ -163,7 +163,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           decoration: InputDecoration(
                             hintText: 'Name',
                             icon: Icon(
-                              Icons.verified_user,
+                              Icons.person_add,
                               color: Color(0xFF79C44F),
                             ),
                           ),
@@ -201,14 +201,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             //   ),
                             // ),
                           
-                            Text(
-                              _selectedg,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20.0,
-                                color: Color(0xFFFF748C),
-                              ),
-                            ),
+                           
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: TextField(
@@ -231,7 +224,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           decoration: InputDecoration(
                             hintText: 'Phone Number',
                             icon: Icon(
-                              Icons.email,
+                              Icons.phone,
                               color: Color(0xFF79C44F),
                             ),
                           ),
@@ -259,7 +252,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                       Row(
                   children: [
-                    Text("Select State        "),
+                    Text("Select State        ",style:TextStyle(color:  Color(0xFF79C44F)),),
                     DropdownButton<String>(
       value: _state,
       icon: const Icon(Icons.arrow_drop_down_circle_outlined),
@@ -343,16 +336,19 @@ class _RegisterPageState extends State<RegisterPage> {
                       // ),
                       
                       // ignore: deprecated_member_use
+                      SizedBox(
+                                height: 30.0,
+                              ),
                       RaisedButton(
                         onPressed: () => validate_submit(context),
                         textColor: Colors.white,
-                        padding: EdgeInsets.all(30),
+                        padding: EdgeInsets.all(20),
                         color: Color(0xFF79C44F),
                         child: Text("REGISTER",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontFamily: 'GlacialIndifference',
-                              fontSize: 30
+                              fontSize: 20
                           ),
                         ),
 

@@ -53,8 +53,8 @@ class _ExpertPageState extends State<ExpertPage> {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         title: Text(
-          "Expert's Phone Number",
-          textAlign: TextAlign.center,
+          "Expert's Phone No. Statewise",
+          textAlign: TextAlign.left,
           style: TextStyle(
             fontSize: 20.0,
             fontFamily: "GlacialIndifference",
