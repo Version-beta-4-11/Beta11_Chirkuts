@@ -45,7 +45,7 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF79C44F),
       body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
@@ -55,11 +55,11 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin {
             children: <Widget>[
               Padding(
                   padding: EdgeInsets.only(bottom: 60.0),
-                  child: Text("Welcome",
+                  child: Text("KISAN SEVA",
                   style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30.0,
-                        color: kPrimaryColor),
+                        color: Color(0xFFFFFFFF)),
                   textAlign: TextAlign.center,))
             ],
           ),

@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'weather.dart';
+import 'login.dart';
 
 class Home extends StatefulWidget {
   static final String routeName = 'home';
@@ -22,9 +23,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("kisan sewa"),
-        backgroundColor: Color(0xFF50fa78),
+        title: Text("KISAN SEVA", style: TextStyle(color: Colors.white),),
+        backgroundColor: Color(0xFF79C44F),
       ),
+      body: AuthPage(),
     );
   }
 }
