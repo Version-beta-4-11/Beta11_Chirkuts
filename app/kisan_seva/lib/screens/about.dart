@@ -9,7 +9,7 @@ class AboutPage extends StatelessWidget {
         elevation: 0.0,
         centerTitle: true,
         title: Text(
-          "ABOUT",
+          "About",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 36.0,
